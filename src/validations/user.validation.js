@@ -18,7 +18,7 @@ const getUsers = {
   role: yup.string(),
   page: yup.number().integer(),
   limit: yup.number().integer(),
-  sort: yup.string(),
+  sortBy: yup.string(),
   select: yup.string(),
 }
 
