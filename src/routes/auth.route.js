@@ -16,14 +16,14 @@ router.post(
   authController.activate
 )
 router.post('/login', validate(authValidation.login), authController.login)
-router.get('/access-token', authController.accessToken)
+router.get('/access_token', authController.accessToken)
 router.post(
-  '/forgot-password',
+  '/forgot_password',
   validate(authValidation.forgotPassword),
   authController.forgotPassword
 )
 router.post(
-  '/reset-password',
+  '/reset_password',
   protect,
   validate(authValidation.resetPassword),
   authController.resetPassword

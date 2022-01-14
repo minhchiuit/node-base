@@ -7,7 +7,7 @@ import { uploadController } from '../controllers'
 const router = new Router()
 
 router.post(
-  '/',
+  '/avatar',
   protect,
   uploadStorage.single('avatar'),
   upload,
